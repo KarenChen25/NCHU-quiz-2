@@ -15,12 +15,14 @@ function show(){
 	
 }
 
-function myFunction() {
+function show3() {
+document.getElementById("hi").textContent="Web  Programming-4102029023";
 }
 </script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
 
 <script type="text/javascript">
+function show2(){
 $(document).ready(function(){
   $("li").mouseenter(function(){
     $(this).css({"font-size": "28px","color": "red"});
@@ -29,10 +31,11 @@ $(document).ready(function(){
     $(this).css({"font-size": "16px","color": "#000"});
   });
 });
+}
 </script>
   </head>
 	<body>
-<h1><b>Web&nbsp;Programming</b></h1>
+<h1 id="hi"><b>Web&nbsp;Programming</b></h1>
 <hr></hr>
 <ul id="myList">
   Content
@@ -44,8 +47,8 @@ $(document).ready(function(){
 </ul>
 	<br>
 <input type="button" value="以js更改元素內容" onclick="show()"></input>
-<input type="button" value="以JQuery更改css"></input>
-<input type="button" value="以JQuery更改css"></input>
+<input type="button" value="以JQuery更改css" onclick="show2()"></input>
+<input type="button" value="Web-Programming-學號" onclick="show3()"></input>
 
   </body>
 </html>
